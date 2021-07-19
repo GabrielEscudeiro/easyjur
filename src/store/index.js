@@ -43,6 +43,7 @@ export default new Vuex.Store({
         mensagem: "Se puder, realize uns ajustes no projeto. A lista está em anexo",
       },
     ],
+
     sidebar: false,
   },
   mutations: {
@@ -60,5 +61,4 @@ export default new Vuex.Store({
       return state.mensagens.filter((msg) => !msg.lida);
     },
   },
-  modules: {},
 });

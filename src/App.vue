@@ -1,9 +1,12 @@
 <template>
   <v-app>
-    <TheHeader />
     <BarraLateral />
-    <v-main>
-      <router-view />
+    <TheHeader />
+
+    <v-main class="background">
+      <v-container fluid>
+        <router-view />
+      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -23,3 +26,21 @@ export default {
   },
 };
 </script>
+<style>
+.background {
+  background-color: #f1f5f8;
+}
+h3 {
+  font-size: 16px;
+}
+.rotas {
+  padding: 0;
+  text-align: right;
+  font-weight: 700;
+  justify-content: right;
+}
+.titulo {
+  color: #151245;
+  font-size: 1.6rem;
+}
+</style>

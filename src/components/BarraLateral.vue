@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <button @click="!sidebarTeste">BOTAO BOLADAO CLICA EM MIM SO PRA TESTEAA</button>
-    <v-navigation-drawer app class="rounded-border" expand-on-hover clipped flat mini-variant:sync="sidebarTeste" dark v-model="sidebar" color="#151245">
+  <div class="teste">
+    <v-navigation-drawer app :v-model="null" class="rounded-border" :mini-variant="sidebar" clipped flat dark color="#151245">
       <v-list>
         <v-list-item class="pr-0" v-for="(aba, index) in listaAbas" :key="index" :to="aba.route">
           <v-list-item-icon>
@@ -92,7 +91,6 @@ export default {
           icone: "mdi-help-circle-outline",
         },
       ],
-      sidebarTeste: false,
     };
   },
   computed: {
@@ -102,7 +100,17 @@ export default {
 </script>
 
 <style scoped>
+.rounded-border {
+  background: linear-gradient(0deg, rgba(21, 18, 69, 1) 1%, rgba(67, 66, 78, 1) 49%, rgba(21, 18, 69, 1) 100%);
+}
 .titulo-navbar {
   font-size: 14px;
+}
+.teste {
+  position: relative;
+}
+.botaoTeste {
+  position: absolute;
+  left: 100px;
 }
 </style>
