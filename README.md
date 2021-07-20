@@ -2,6 +2,8 @@
 
 Projeto Desafio para EasyJur
 
+A interface visual do projeto pode ser visualizada pelo link: [easyjur-desafio](https://easyjur-desafio.netlify.app/)
+
 
 ## Project setup
 ```
