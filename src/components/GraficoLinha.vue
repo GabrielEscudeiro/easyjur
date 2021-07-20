@@ -11,7 +11,7 @@
 import Chart from "chart.js/auto";
 
 export default {
-  name: "GraficoDonut",
+  name: "GraficoLinha",
   props: ["dados"],
   data() {
     return {

@@ -73,7 +73,7 @@
     </v-row>
     <v-row>
       <v-col cols="12" sm="" md="4" lg="3" v-for="index in 4" :key="index">
-        <GraficoDonut :dados="dadosDonut[index + 3]" />
+        <GraficoDonut :dados="dadosDonut[index + 2]" />
       </v-col>
     </v-row>
   </div>
@@ -187,9 +187,9 @@ export default {
         },
         {
           id: "donut07",
-          nome: "TIMESHEET CLIENTE",
+          nome: "PESSOAS TIPO",
           data: {
-            labels: ["Empresa A", "Empresa B", "Empresa C"],
+            labels: ["Pessoa 1", "Pessoa 2", "Pessoa 3"],
             datasets: [
               {
                 label: "Dataset 1",
@@ -209,14 +209,14 @@ export default {
             datasets: [
               {
                 label: "Receitas",
-                data: [0, 100000, 150000, 172000, 220000, 190000, 260000, 280000, 322000, 245000, 232000, 250000],
+                data: [0, 100000, 150000, 120000, 126000, 160000, 115000, 170000, 120000, 135000, 185500, 140000],
                 borderColor: "rgb(43,33,200)",
                 backgroundColor: "rgb(43,33,200)",
                 tension: 0.2,
               },
               {
                 label: "Despesas",
-                data: [0, 20000, 35000, 40000, 45000, 30000, 26000, 52000, 57000, 43000, 29000, 34000],
+                data: [0, 15000, 10000, 12000, 20000, 14500, 26000, 52000, 57000, 34000, 29000, 34000],
                 borderColor: "rgb(191, 13, 0)",
                 backgroundColor: "rgb(191, 13, 0)",
                 tension: 0.2,

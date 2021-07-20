@@ -9,6 +9,7 @@
         <v-breadcrumbs class="rotas .d-md" :items="items" large></v-breadcrumbs>
       </v-col>
     </v-row>
+
     <v-row class="fill-height">
       <v-col lg="9">
         <v-sheet height="64">
@@ -95,15 +96,29 @@
           </v-menu>
         </v-sheet>
       </v-col>
+
       <v-col lg="3">
+        <v-row>
+          <v-btn class="mb-4 mr-4" fab dark color="indigo darken-4">
+            <v-icon dark>
+              mdi-plus
+            </v-icon>
+          </v-btn>
+          <v-text-field append-icon="mdi-magnify" v-model="busca" label="Busca" solo></v-text-field>
+        </v-row>
         <AgendaHoje />
       </v-col>
+    </v-row>
+
+    <v-row class="mt-10">
+      <AgendaLista />
     </v-row>
   </div>
 </template>
 
 <script>
 import AgendaHoje from "../components/AgendaHoje.vue";
+import AgendaLista from "../components/AgendaLista.vue";
 export default {
   name: "Agenda",
 
@@ -225,6 +240,7 @@ export default {
   },
   components: {
     AgendaHoje,
+    AgendaLista,
   },
 };
 </script>
