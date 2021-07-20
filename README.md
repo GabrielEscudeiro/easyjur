@@ -1,5 +1,8 @@
 # easyjur
 
+Projeto Desafio para EasyJur
+
+
 ## Project setup
 ```
 npm install
